@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1440px;
+    margin-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    & img {
+        height: 43px;
+        width: 43px;
+    }
+
+    &__menu {
+        color: pink;
+        text-decoration: none;
+        padding: 20px;
+        font-size: 22px;
+
+        @media (max-width: 768px) {
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        } 
+
+        &.active {
+            text-decoration: underline;
+        }
+    }  
+
+     @media (max-width: 768px) {
+         font-size: 12px;
+         text-transform: uppercase;
+         margin: 5% auto;
+        
+         &__logo {
+             width:50%;   
+         }
+
+         & img {
+             height: 43px;
+             width: auto;
+         }
+      }
+}
+
+  
