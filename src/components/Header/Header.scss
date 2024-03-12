@@ -2,10 +2,16 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 1440px;
+    max-width: 100%;
     margin-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+        120deg,
+        rgba(245, 140, 164, 0.953) 10%,
+        rgb(253, 253, 253) 50%
+    );
 
     & img {
         height: 43px;

@@ -7,11 +7,12 @@ import Error from "./pages/Error";
 function AppRouter() {
     return (
         <Routes>
-            <Route exact path="/" component={Home} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/projets/:id" component={Projets} />
             <Route path="/*" component={Error} />
         </Routes>
     );
-}
+}  
 
 export default AppRouter;
