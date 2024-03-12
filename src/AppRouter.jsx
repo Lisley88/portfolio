@@ -7,9 +7,9 @@ import Error from "./pages/Error";
 function AppRouter() {
     return (
         <Routes>
-            <Route path="/portfolio/" element={<Home />} />
-            <Route path="/portfolio/projets/:id" element={<Projets />} />
-            <Route path="/portfolio/*" element={<Error />} />
+            <Route exact path="/" component={Home} />
+            <Route path="/projets/:id" component={Projets} />
+            <Route path="/*" component={Error} />
         </Routes>
     );
 }
