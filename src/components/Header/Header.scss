@@ -1,28 +1,25 @@
 .navbar {
-    display: flex;
-    justify-content: flex-end;
+    
     align-items: center;
     max-width: 100%;
-    margin-top: 1%;
+    padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(
-        120deg,
-        rgba(245, 140, 164, 0.953) 10%,
-        rgb(253, 253, 253) 50%
-    );
+    background-color: #c5796d;
 
     & img {
         height: 43px;
         width: 43px;
     }
-
+    &__menus {
+        display: flex;
+        justify-content: flex-end;
+    }
     &__menu {
         color: pink;
         text-decoration: none;
         padding: 20px;
-        font-size: 22px;
+        font-size: 2rem;
 
         @media (max-width: 768px) {
             padding: 10px;
@@ -31,27 +28,25 @@
 
         &:hover {
             text-decoration: underline;
-        } 
+        }
 
         &.active {
             text-decoration: underline;
         }
-    }  
+    }
 
-     @media (max-width: 768px) {
-         font-size: 12px;
-         text-transform: uppercase;
-         margin: 5% auto;
-        
-         &__logo {
-             width:50%;   
-         }
+    @media (max-width: 768px) {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 5% auto;
 
-         & img {
-             height: 43px;
-             width: auto;
-         }
-      }
+        &__logo {
+            width: 50%;
+        }
+
+        & img {
+            height: 43px;
+            width: auto;
+        }
+    }
 }
-
-  
