@@ -5,7 +5,7 @@
         "description": "Site de location immobilière",
         "type": "Front",
         "tags": ["React.js", "Sass"],
-        "picture": "",
+        "picture": "/../../assets/kasa.webp",
         "competences": [
             "Mettre en œuvre des animations CSS",
             "Développer une interface web avec Sass",

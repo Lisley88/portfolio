@@ -1,4 +1,7 @@
 import Banner from "../../components/Banner/Banner";
+import Skills from "../../components/Skills/Skills";
+import Card from "../../components/Card/Card";
+import "../Home/home.scss";
 
 function Home() {
     return (
@@ -6,15 +9,14 @@ function Home() {
             <section>
                 <Banner />
             </section>
-            
+
             <section>
-                <h2>Skills</h2>
+                <Skills />
             </section>
 
             <section>
                 <h2>Projects</h2>
-                <p>
-                </p>
+                <Card />
             </section>
 
             <section>
