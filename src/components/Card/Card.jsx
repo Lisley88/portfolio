@@ -7,7 +7,7 @@ function Card() {
         return (
             <div className="cards" >
                 {datas.map((data,key)=>(
-                        <Link to={`/${data.id}`} className="cards-lien" key={key}>
+                        <Link to={`/portfolio/${data.id}`} className="cards-lien" key={key}>
                             <div className="card"> 
                                 <h2>{data.name}</h2>
                                 <span></span>

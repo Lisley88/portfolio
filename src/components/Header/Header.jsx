@@ -1,5 +1,5 @@
 import '../Header/Header.scss';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -10,10 +10,10 @@ function Header() {
     return (
         <nav className='navbar'>
              <div className='navbar__menus'>
-                  <NavLink className='navbar__menu' to="/">Home</NavLink>
-                  <NavLink className='navbar__menu' onClick={() => {skills?.scrollIntoView({behavior: "smooth",});}} >Skills</NavLink>
-                  <NavLink className='navbar__menu' onClick={() => {projects?.scrollIntoView({behavior: "smooth",});}} >Projects</NavLink>
-                  <NavLink className='navbar__menu' onClick={() => {contact?.scrollIntoView({behavior: "smooth",});}} >Contact</NavLink>
+                  <Link className='navbar__menu' to="/portfolio">Home</Link>
+                  <Link className='navbar__menu' onClick={() => {skills?.scrollIntoView({behavior: "smooth",});}} >Skills</Link>
+                  <Link className='navbar__menu' onClick={() => {projects?.scrollIntoView({behavior: "smooth",});}} >Projects</Link>
+                  <Link className='navbar__menu' onClick={() => {contact?.scrollIntoView({behavior: "smooth",});}} >Contact</Link>
              </div>
         </nav>
     )
