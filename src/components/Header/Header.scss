@@ -1,5 +1,4 @@
 .navbar {
-    
     align-items: center;
     max-width: 100%;
     padding-top: 1%;
@@ -7,13 +6,14 @@
     padding-right: 5%;
     background-color: #c5796d;
 
-    & img {
-        height: 43px;
-        width: 43px;
-    }
     &__menus {
         display: flex;
         justify-content: flex-end;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+            margin:0;
+        }
     }
     &__menu {
         color: pink;
@@ -23,14 +23,10 @@
 
         @media (max-width: 768px) {
             padding: 10px;
-            font-size: 12px;
+            font-size: 1.2rem;
         }
 
         &:hover {
-            text-decoration: underline;
-        }
-
-        &.active {
             text-decoration: underline;
         }
     }
@@ -38,15 +34,5 @@
     @media (max-width: 768px) {
         font-size: 12px;
         text-transform: uppercase;
-        margin: 5% auto;
-
-        &__logo {
-            width: 50%;
-        }
-
-        & img {
-            height: 43px;
-            width: auto;
-        }
     }
 }
