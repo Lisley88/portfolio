@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './AppRouter';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -9,11 +9,11 @@ import Footer from './components/Footer/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.StrictMode>
-    <Router>
+  //<React.StrictMode>
+    <BrowserRouter>
       <Header />
       <AppRouter />
       <Footer />
-    </Router>
-  </React.StrictMode>
+    </BrowserRouter>
+  //</React.StrictMode>
 );
