@@ -17,7 +17,7 @@ const Skills = () => {
                     <li>
                         HTML5
                         <span>
-                            <FontAwesomeIcon icon={faHtml5} className="icone" />
+                            <FontAwesomeIcon icon={faHtml5} className="icone" size="2xl"/>
                         </span>
                     </li>
                     <li>
@@ -26,25 +26,26 @@ const Skills = () => {
                             <FontAwesomeIcon
                                 icon={faCss3Alt}
                                 className="icone"
+                                size="2xl"
                             />
                         </span>
                     </li>
                     <li>
                         JavaScript
                         <span>
-                            <FontAwesomeIcon icon={faJs} className="icone" />
+                            <FontAwesomeIcon icon={faJs} className="icone" size="2xl" />
                         </span>
                     </li>
                     <li>
                         React.Js
                         <span>
-                            <FontAwesomeIcon icon={faReact} className="icone" />
+                            <FontAwesomeIcon icon={faReact} className="icone"  size="2xl" />
                         </span>
                     </li>
                     <li>
                         Sass
                         <span>
-                            <FontAwesomeIcon icon={faSass} className="icone" />
+                            <FontAwesomeIcon icon={faSass} className="icone" size="2xl" />
                         </span>
                     </li>
                 </ul>
@@ -55,7 +56,7 @@ const Skills = () => {
                     <li>
                         NodeJs
                         <span>
-                            <FontAwesomeIcon icon={faNode} className="icone" />
+                            <FontAwesomeIcon icon={faNode} className="icone" size="2xl"/>
                         </span>
                     </li>
                     <li>
@@ -64,6 +65,7 @@ const Skills = () => {
                             <FontAwesomeIcon
                                 icon={faDatabase}
                                 className="icone"
+                                size="2xl"
                             />
                         </span>
                     </li>
@@ -77,6 +79,7 @@ const Skills = () => {
                             <FontAwesomeIcon
                                 icon={faSquareGit}
                                 className="icone"
+                                size="2xl"
                             />
                         </span>
                     </li>
@@ -86,6 +89,7 @@ const Skills = () => {
                             <FontAwesomeIcon
                                 icon={faSquareGithub}
                                 className="icone"
+                                size="2xl"
                             />
                         </span>
                     </li>
