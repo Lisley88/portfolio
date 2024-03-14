@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner/Banner";
 import Skills from "../../components/Skills/Skills";
 import Card from "../../components/Card/Card";
+import Contact from "../../components/Contact/Contact";
 import "../Home/home.scss";
 
 function Home() {
@@ -10,17 +11,18 @@ function Home() {
                 <Banner />
             </section>
 
-            <section>
+            <section id="skills">
                 <Skills />
             </section>
 
-            <section>
+            <section id="projects">
                 <h2>Projects</h2>
                 <Card />
             </section>
 
-            <section>
+            <section id="contact">
                 <h2>Contact</h2>
+                <Contact />
             </section>
         </main>
     );
