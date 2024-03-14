@@ -5,17 +5,17 @@ import '../Card/Card.scss';
 
 function Card() {
         return (
-            <div className="cards">
-                {React.Children.toArray(
-                    datas.map((data)=>(
-                        <Link to={`/projets/${data.id}`} className="cards-lien">
-                            <div className="card">
-                                <img src={data.picture} alt={data.name} />
+            <div className="cards" >
+                {datas.map((data,key)=>(
+                        <Link to={`/${data.id}`} className="cards-lien" key={key}>
+                            <div className="card"> 
                                 <h2>{data.name}</h2>
+                                <span></span>
+                                <img src={data.picture} alt={data.name} />
                             </div>
                         </Link>
                     ))
-                )}
+                }
             </div>
         )
     }

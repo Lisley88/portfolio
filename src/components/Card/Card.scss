@@ -1,18 +1,67 @@
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-radius: 25px;
-    
-}
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    width: 95%;
+    margin: 0 auto;
 
+    @media (max-width :768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    }
+
+    h2 {
+    font-size: 2rem;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1
+}
+    h2, span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+        }  
+}
+   
 .card {
     position: relative;
     border-radius: 10px;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: rgba(175, 121, 121, 0.35) 0px 5px 15px;
     height: 300px;
+
+    img, span {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+    span {
+       transform: translate(-50%, -50%);
+    }
+    &:hover {
+        transition: 0.5s;
+        transform-origin: center;
+        transform: scale(1.05);
+    }
+    &:hover span {
+    background-color: rgba(148, 52, 121, 0.4);
+    border-radius: 10px;
+}
+    &:hover h2 {
+        opacity: 1;
+        color: white;
+    }
+    & img {
+        object-fit: cover;   
+    }
 }
 .cards-lien {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
