@@ -7,7 +7,7 @@ import "../Home/home.scss";
 function Home() {
     return (
         <main>
-            <section>
+            <section id="home">
                 <Banner />
             </section>
 
@@ -16,12 +16,10 @@ function Home() {
             </section>
 
             <section id="projects">
-                <h2>Projects</h2>
                 <Card />
             </section>
 
             <section id="contact">
-                <h2>Contact</h2>
                 <Contact />
             </section>
         </main>

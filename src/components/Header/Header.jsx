@@ -1,22 +1,48 @@
-import '../Header/Header.scss';
-import { Link } from 'react-router-dom';
-
+import React, { useEffect } from "react";
+import "../Header/Header.scss";
+import { NavLink, useLocation } from "react-router-dom";
 
 function Header() {
-    const skills = document.getElementById("skills");
-    const projects = document.getElementById("projects");
-    const contact = document.getElementById("contact");
+    const location = useLocation();
+
+    useEffect(() => {
+        const selectedSection = location.hash.substring(1);
+        if (location.pathname === "/portfolio/" && location.hash) {
+            scrollToSection(selectedSection);
+        }
+    }, [location]);
+
+    const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView();
+        }
+    };
 
     return (
-        <nav className='navbar'>
-             <div className='navbar__menus'>
-                  <Link className='navbar__menu' to="/portfolio">Home</Link>
-                  <Link className='navbar__menu' onClick={() => {skills?.scrollIntoView({behavior: "smooth",});}} >Skills</Link>
-                  <Link className='navbar__menu' onClick={() => {projects?.scrollIntoView({behavior: "smooth",});}} >Projects</Link>
-                  <Link className='navbar__menu' onClick={() => {contact?.scrollIntoView({behavior: "smooth",});}} >Contact</Link>
-             </div>
+        <nav className="navbar">
+            <ul className="navbar__menus">
+                <li className="navbar__menu">
+                    <NavLink to="/portfolio/#home">Home</NavLink>
+                </li>
+                <li className="navbar__menu">
+                    <NavLink to="/portfolio/#skills">
+                        Skills
+                    </NavLink>
+                </li>
+                <li className="navbar__menu">
+                    <NavLink to="/portfolio/#projects">
+                        Projects
+                    </NavLink>
+                </li>
+                <li className="navbar__menu">
+                    <NavLink to="/portfolio/#contact">
+                        Contact
+                    </NavLink>
+                </li>
+            </ul>
         </nav>
-    )
+    );
 }
 
-export default Header
+export default Header;
