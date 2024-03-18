@@ -35,8 +35,8 @@
 
 #input-submit {
     width: 30%;
-    color: white;
-    background: #c5796d;
+    color: #ffffff;
+    background: #8A4038;
     cursor: pointer;
     margin: 0 auto;
 
@@ -45,4 +45,8 @@
       transform-origin: center;
       transform: scale(1.05);
     }
+}
+
+#name {
+    margin-bottom: 10px;
 }

@@ -28,27 +28,38 @@ function Contact() {
             );
     };
     return (
+        <>
+        <h2>Contact</h2>
         <div className="contact">
             <form ref={form} onSubmit={sendEmail} id="contact-form">
                 <div className="contact-infos">
-                    <input className="contact-name" type="text" placeholder="Name" name="user_name" />
+                    <label htmlFor="name">Nom et prénom :</label>
+                    <input className="contact-name" type="text" name="user_name" id="name" required/>
+                   
+                    <label htmlFor="email">L'adresse mail :</label>
                     <input
                         className="contact-mail"
                         type="email"
-                        placeholder="Email address"
                         name="user_email"
+                        id="email"
+                        required
                     />
+                    
                 </div>
                 <div >
+                    <label htmlFor="message">Message :</label>
                     <textarea className="contact-msg"
                         name="message"
                         type="text"
-                        placeholder="Message">
+                        id="message"
+                        required>
                     </textarea>
+                   
                 </div>
-                <input className="contact-submit" type="submit" value="Submit" id="input-submit" />
+                <input className="contact-submit" type="submit" value="Envoyer" id="input-submit" />
             </form>
         </div>
+        </>
     );
 }
 

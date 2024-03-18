@@ -5,7 +5,7 @@
         "description": "Site de location immobilière",
         "type": "Front",
         "tags": ["React.js", "Sass"],
-        "picture": "https://raw.githubusercontent.com/Lisley88/portfolio/main/src/assets/kasa.webp",
+        "picture": "images/projets/kasa.webp",
         "competences": [
             "Mettre en œuvre des animations CSS",
             "Développer une interface web avec Sass",
@@ -19,7 +19,7 @@
         "description": "Site de référencement de livre",
         "type": "Back",
         "tags": ["Node.js", "Express.js", "MongoDB"],
-        "picture": "https://raw.githubusercontent.com/Lisley88/portfolio/main/src/assets/mon_vieux_grimoire.webp",
+        "picture": "images/projets/mon_vieux_grimoire.webp",
         "competences": [
             "Implémenter un modèle logique de données conformément à la réglementation",
             "Mettre en œuvre des opérations CRUD de manière sécurisée",
@@ -33,7 +33,7 @@
         "description": "Site de photographe professionel",
         "type": "Front",
         "tags": ["SEO", "Débug", "Accessibilité"],
-        "picture": "https://raw.githubusercontent.com/Lisley88/portfolio/main/src/assets/Nina_Carducci.webp",
+        "picture": "images/projets/Nina_Carducci.webp",
         "competences": [
             "Optimiser les performances d’un site web",
             "Débugger un site web grâce aux Chrome DevTools",
@@ -47,7 +47,7 @@
         "description": "Site de réservation de séjours",
         "type": "Front",
         "tags": ["HTML", "CSS"],
-        "picture": "https://raw.githubusercontent.com/Lisley88/portfolio/main/src/assets/Booki.webp",
+        "picture": "images/projets/Booki.webp",
         "competences": [
             "Implémenter une interface responsive avec HTML et CSS",
             "Intégrer du contenu conformément à une maquette avec HTML et CSS",
@@ -61,7 +61,7 @@
         "description": "Création d'une page web dynamique avec JavaScript",
         "type": "Front",
         "tags": ["Javascript", "CSS", "API"],
-        "picture": "https://raw.githubusercontent.com/Lisley88/portfolio/main/src/assets/Sophie-Bluel.webp",
+        "picture": "images/projets/Sophie-Bluel.webp",
         "competences": [
             "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
             "Manipuler les éléments du DOM avec JavaScript",

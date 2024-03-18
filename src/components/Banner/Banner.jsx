@@ -1,24 +1,27 @@
-import '../Banner/Banner.scss';
-import photo from '../../assets/picture.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHand} from '@fortawesome/free-solid-svg-icons';
+import "../Banner/Banner.scss";
+import photo from "../../assets/picture.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandSparkles } from "@fortawesome/free-solid-svg-icons";
 
 function Banner() {
-        return (
-            <div className='banner'>
-                <div className='banner-box'>
-                    <h3 className='msg-banner'>
-                    <FontAwesomeIcon icon={faHand} className='icone' /> Bienvenue ! </h3>
-                    <h3>Je suis Liaosha</h3>
-                    <h3>Développeuse web junior</h3> 
-                </div>
-                <div className='banner-photo'>
-                  <img src={photo} alt='me'></img>
-                </div>
-                
+    return (
+        <div className="banner">
+            <div className="banner__box">
+                <h1 className="msg__banner">
+                    <FontAwesomeIcon
+                        icon={faHandSparkles}
+                        className="handicon"
+                    />
+                    Bienvenue !
+                </h1>
+                <h1>Je suis Liaosha</h1>
+                <h1>Développeuse web junior</h1>
             </div>
-        ) 
-    }
+            <div className="banner__photo">
+                <img src={photo} alt="me"></img>
+            </div>
+        </div>
+    );
+}
 
-
-export default Banner
+export default Banner;

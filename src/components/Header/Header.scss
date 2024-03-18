@@ -3,7 +3,7 @@
     top: 0;
     width: 100%;
     z-index: 3;
-    background-color: #8A4038;
+    background-color: #8a4038;
     color: #ffffff;
     margin-top: 0;
 
@@ -13,18 +13,17 @@
         padding-right: 40px;
         margin-top: 0 !important;
         margin-bottom: 0 !important;
-       
+
         @media (max-width: 768px) {
             justify-content: center;
             margin: 0;
         }
     }
     &__menu {
-        color: #ffffff;
         text-decoration: none;
         padding: 10px;
-        font-size: 2rem;
         text-align: center;
+
         @media (max-width: 768px) {
             padding: 10px;
             font-size: 1.2rem;
@@ -33,19 +32,22 @@
         &:hover {
             text-decoration: underline;
         }
+
         & a {
             text-decoration: none;
-            color:#ffffff;
-            font-size: 2rem;  
+            color: #ffffff;
+            font-size: 1.5rem;
+
+            & a.active {
+                text-decoration: none;
+            }
+       
             @media (max-width: 768px) {
-                padding: 10px;
+                padding: 0;
                 font-size: 0.85rem;
             }
-        
-           
         }
     }
-
 
     @media (max-width: 768px) {
         font-size: 12px;

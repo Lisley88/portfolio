@@ -9,11 +9,11 @@ import Footer from './components/Footer/Footer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  //<React.StrictMode>
+  <React.StrictMode>
     <BrowserRouter>
       <Header />
       <AppRouter />
       <Footer />
     </BrowserRouter>
-  //</React.StrictMode>
+  </React.StrictMode>
 );

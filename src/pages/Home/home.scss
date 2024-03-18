@@ -1,8 +1,18 @@
 h2 {
     text-align: center;
     font-size: 5rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
+
 }
 
 #skills, #projects, #contact  {
     padding-top: 10px;
+
+    @media (max-width: 768px) {
+        padding-top: 20px;
+    }
 }
+

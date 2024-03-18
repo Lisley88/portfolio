@@ -23,16 +23,16 @@ function Header() {
         <nav className="navbar">
             <ul className="navbar__menus">
                 <li className="navbar__menu">
-                    <NavLink to="/portfolio/#home">Home</NavLink>
+                    <NavLink to="/portfolio/#home">Accueil</NavLink>
                 </li>
                 <li className="navbar__menu">
                     <NavLink to="/portfolio/#skills">
-                        Skills
+                        Compétences
                     </NavLink>
                 </li>
                 <li className="navbar__menu">
                     <NavLink to="/portfolio/#projects">
-                        Projects
+                        Projets
                     </NavLink>
                 </li>
                 <li className="navbar__menu">
