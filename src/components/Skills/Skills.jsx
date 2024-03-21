@@ -71,7 +71,7 @@ const Skills = () => {
                     </li>
                 </ul>
                 <ul>
-                    <h3>Others</h3>
+                    <h3>Les autres</h3>
                     
                     <li>
                         Git
