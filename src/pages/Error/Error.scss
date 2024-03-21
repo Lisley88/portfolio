@@ -1,6 +1,8 @@
 .errorbox {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 48px);
 
     &__404 {
         color: #c5796d;
